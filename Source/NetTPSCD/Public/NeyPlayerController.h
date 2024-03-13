@@ -19,9 +19,22 @@ public:
 	UPROPERTY()
 	class ABattleGameMode* gm;
 
+	// MainUI를 화면에 보이게하고 싶다.
+// BeginPlay에서 MainUI를 생성해서 기억하고 AddToViewport하고싶다.
+	UPROPERTY( EditDefaultsOnly )
+	TSubclassOf<class UMainUI> mainUIFactory;
+
+	UPROPERTY()
+	class UMainUI* mainUI;
+
 	virtual void BeginPlay() override;
 
 	//재시작 요청이 오면 서버RPC로 서버에게 현재 플레이어를 UnPossess하고 파괴하고, 게임 모드에게 재시작해라고 하고 싶다능
 	UFUNCTION(Server, Reliable)
 	void ServerRetry();
+
+	//재시작 요청을 하면 서버RPC로 관전자를 생성해서 빙의 하라고 한다.
+	//5초후에 다시 원래 플레이어로 시작하도록 처리하고 싶다.
+	UFUNCTION( Server , Reliable )
+	void ServerRetrySpector();
 };
