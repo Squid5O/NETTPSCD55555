@@ -35,3 +35,19 @@ Pawn::beginPlay : GetController
 Possess : GetController
 
 관전자?
+
+0----
+언리얼 네트워크
+방(RooM) - 세션
+
+BatttleMap
+LobbyMap 방생성/방찾기/방입장
+
+방생성자- 호스트
+
+
+게임인스턴스에 모'드 맵 다 들어감
+
+"C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" "C:\Projects\Lec\NetTPS\NetTPS.uproject" -game -ResX=640 -ResY=480 -WinX=200 -WinY=300 -log
+
+batch 파일
