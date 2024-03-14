@@ -51,3 +51,22 @@ LobbyMap 방생성/방찾기/방입장
 "C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe" "C:\Projects\Lec\NetTPS\NetTPS.uproject" -game -ResX=640 -ResY=480 -WinX=200 -WinY=300 -log
 
 batch 파일
+
+
+--------------
+
+스팀말고도 방법은 많음 - 네틐워크
+.3.14
+
+언리얼5 데디케이트 서버
+ㄴ 포트나이트돌림
+
+클라우드
+
+포톤네트워크
+
+데디케이트는 전용서보라 비용들어감. 언리얼소스코드 다운받아야함
+
+호스트가 나가면 방이 깨짐
+
+파인디파인
