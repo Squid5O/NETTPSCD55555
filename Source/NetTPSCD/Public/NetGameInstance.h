@@ -26,7 +26,11 @@ public:
 	void CreateRoom(int32 maxPlayerCount, FString roomName);
 	//세션생성응답함수
 	void OnCreateRoomComplete( FName sessionName , bool bWasSuccessful );
+
+	TSharedPtr<FOnlineSessionSearch> roomSearch;
 	//세션검색요청
+	void FindOtherRooms();
 	//세션검색응답
+	void OnMyFindOtherRoomsComplete( bool bWasSuccessful );
 	
 };
