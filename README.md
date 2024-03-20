@@ -76,4 +76,16 @@ TSharedPtr  - 언리얼의 스마트포인터
 부바
 
 ------------03.18
+3.20
+R Value vs L Value
 
+깊은 복사 , 얕은 복사
+
+이동 시맨틱  = 이동 생성자
+
+자료형, 변수, 포인터, 배열, 조건문, 반복문, 함수, 
+클래스 : 생성자, 소멸자, 복사생성자, 이동생성자
+Lvalue, Rvalue, 깊은 복사, 얕은 복사, 가상함수,
+추상클래스, 인터페이스, 형변환 static_cast, dynamic_cast,
+예외처리, 매트로, STL, 탬플릿
+스마트포인터 : shard_ptr,  unique_ptr : weak_ptr
